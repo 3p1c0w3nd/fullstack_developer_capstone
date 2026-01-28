@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <!-- Link the style sheet here -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background: white;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header-section h2 {
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .info-item {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: #764ba2;
+            width: 40px;
+        }
+
+        .info-item p,
+        .info-item h5 {
+            margin: 0;
+            color: #444;
+        }
+
+        .email-text {
+            color: #764ba2 !important;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(3, 4, 31); height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%; color: white;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white " style="font-size: larger;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" style="font-size: larger;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+<div class="container mt-5">
+    <div class="card contact-card mx-auto" style="max-width: 500px;">
+        <div class="header-section">
+            <i class="fas fa-paper-plane mb-3" style="font-size: 2rem;"></i>
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="card-body p-0">
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h5 class="email-text">3p1c0w3nd@gmail.com</h5>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <p class="card-text">123-456-7890</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <p class="card-text">Colombia, Bogotá</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer bg-white text-center py-3 border-0">
+            <small class="text-muted">We'll get back to you as soon as possible.</small>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</html>
